@@ -191,7 +191,7 @@ def process_pcap(pcap_file):
 
 #### Main ####
 if len(sys.argv) != 3:
-    print('Usage: python3 trace_analysis.py <dirname> <doq|doh>')
+    print('Usage: python3 trace_analysis.py <category> <doq|doh>')
     sys.exit(0)
 
 category_name = sys.argv[1]
