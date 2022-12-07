@@ -16,6 +16,7 @@ if len(sys.argv) > 3:
 else:
     transfer_filename = None
 
+### Classifier Training and Results ###
 data = []
 labels = []
 with open(filename, 'r') as f:
@@ -48,6 +49,8 @@ f1 = f1_score(test_labels, predictions, average='macro')
 print(f'Tasks:{len(test_labels)}')
 print(f'Correct: {correct_predictions}')
 print(f'F1 Score: {f1}')
+
+### Transfer Learning ###
 
 if transfer_filename is None:
     sys.exit(0)

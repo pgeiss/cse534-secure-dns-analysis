@@ -49,9 +49,7 @@ def train_model(file_path,
             optim.step()
             
             training_loss += cur_loss.item()
-            if idx % 100 == 0:
-                size = float(idx + 1)
-                # print(f'Average loss: {training_loss / size}')
+
         size = float(idx + 1)
         avg_train_loss = training_loss / size
         print(f'Average loss: {avg_train_loss}')
